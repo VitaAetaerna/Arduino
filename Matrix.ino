@@ -89,10 +89,6 @@ void shiftLeft(){
 
 
 void shiftTop() {
-  if (0 == CurrentRow){
-    Field[CurrentRow] = Field[CurrentRow];
-  }
-
   if (0 < CurrentRow){
     Field[LastRow] = Field[CurrentRow];
     Field[CurrentRow] = 0;
@@ -108,11 +104,6 @@ void shiftTop() {
 
 
 void shiftBottom(){
-  if(7 == CurrentRow){
-    Field[CurrentRow] = Field[CurrentRow];
-
-  }
-
   if (7 > CurrentRow){
     Field[NextRow] = Field[CurrentRow];
     Field[CurrentRow] = 0;
